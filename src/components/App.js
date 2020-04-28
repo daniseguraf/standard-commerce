@@ -7,14 +7,30 @@ import LightTheme from 'themes/light';
 import DarkTheme from 'themes/dark';
 
 import GlobalFonts from 'assets/fonts';
+import GridBootstrap from './../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 
 const GlobalStyle = createGlobalStyle`
+  ${GridBootstrap}
+
   body {
     background: white;
     color: black;
     font-family: 'Raleway Regular';
     margin: 0;
     min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Raleway Regular';
+  }
+
+  h1 {
+    text-align: center;
   }
 `;
 
